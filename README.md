@@ -8,7 +8,7 @@
 	
 	possible values:{"a1b","a2c","b1b"}
 	
-	curl http://api.userslocation.com:81/api/userslocation/locations/1 
+	curl -XGET http://api.userslocation.com:81/api/userslocation/locations/1 
 	
 	possible values:{"1","2","3"}
 	
