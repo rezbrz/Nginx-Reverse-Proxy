@@ -12,4 +12,7 @@
 	
 	possible values:{"1","2","3"}
 	
+	curl -XGET http://api.userslocation.com:81/api/userslocation/admin
+
+	
 3-possible values for apikey:{"7B5zIqmRGXmrJTFmKa99vcit","QzVV6y1EmQFbbxOfRCwyJs35","mGcjH8Fv6U9y3BVF9H3Ypb9T"}
