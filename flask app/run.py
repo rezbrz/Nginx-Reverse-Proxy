@@ -33,10 +33,18 @@ class Locations(Resource):
         else:
             return {'message': f"'{locationId}' does not exists."}, 409
 
+        
+        
+        
+class Admin(Resource):
+    def get(self):
+        data={"data":"Welcome to admin panel."}
+        return data
     
 
 api.add_resource(Users, '/users')  # add endpoints
 api.add_resource(Locations, '/locations/<locationId>')
+api.add_resource(Admin, '/admin')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port='5002')  # run our Flask app
