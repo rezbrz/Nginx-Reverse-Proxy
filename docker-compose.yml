@@ -11,15 +11,25 @@ services:
     networks:
       - mynetwork
 
-  nginx:
-    build: ./nginx
-    container_name: nginx
+  nginx_front:
+    build: ./nginx_front
+    container_name: nginx_front
     restart: always
     ports:
       - "81:81"
+    networks:
+      - mynetwork
+      
+  nginx_backend:
+    build: ./nginx_backend
+    container_name: nginx_backend
+    restart: always
+    ports:
+      - "82:82"
     networks:
       - mynetwork
 
 networks:
     mynetwork:
         driver: "bridge"
+
